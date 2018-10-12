@@ -14,7 +14,7 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/5.0 
 # update apt cache and install librdkafka-dev
 sudo apt-get update && sudo apt-get install librdkafka-dev
 ```
-* clone repo and build kafkap
+* clone repo in $GOPATH/src/ and build kafkap
 ```
 make setup
 make build
@@ -26,4 +26,5 @@ Run `kafkap` for usage.
 
 Links
 -----
-based on [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go) [examples](https://github.com/confluentinc/confluent-kafka-go/blob/master/examples/producer_example/producer_example.go).
+* based on [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go) [examples](https://github.com/confluentinc/confluent-kafka-go/blob/master/examples/producer_example/producer_example.go).
+* check out https://github.com/mouminoux/kafkacli for kafka CLI consumer
